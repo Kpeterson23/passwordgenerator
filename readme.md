@@ -14,7 +14,8 @@ See the notes.js for the examples and things we discussed.
 
 # Screen Shot of Application
 
-<img src="IMG_2627.png"/>
+<img src="
+/var/folders/vp/0ptbbpgd3wq5z13c4lg377dw0000gn/T/TemporaryItems/NSIRD_screencaptureui_7ZJsjR/Screenshot 2023-03-14 at 21.01.47.png"/>
 
 # Link to Deployed Application
 
