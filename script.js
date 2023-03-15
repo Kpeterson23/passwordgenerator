@@ -1,6 +1,5 @@
 // Assignment Code
 var generateBtn = document.querySelector("#generate");
-var char = "0123456789abcdefghijklmnopqrstuvwxyz!#$%&'()*+,-./:;<=>?@[]^_`{|}~";
 
 // TO DO: Flesh out character arrays
 var numbers = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10"];
@@ -32,6 +31,34 @@ var lowerCase = [
   "y",
   "z",
 ];
+var upperCase = [
+  "A",
+  "B",
+  "C",
+  "D",
+  "E",
+  "F",
+  "G",
+  "H",
+  "I",
+  "J",
+  "K",
+  "L",
+  "M",
+  "N",
+  "O",
+  "P",
+  "Q",
+  "R",
+  "S",
+  "T",
+  "U",
+  "V",
+  "W",
+  "X",
+  "Y",
+  "Z",
+];
 
 var specialChar = ["!", "#", "$", "%", "?", "&"];
 
@@ -56,15 +83,17 @@ function generatePassword() {
   // To do: Ask user 1> Do you want to use lower case? 2. Do you want to use upper case?...
   var yesLower = confirm("Do you want to use lower case characters?");
   var yesUpper = confirm("Do you want to use upper case characters?");
+  var yesSpecial = confirm("Do you want to use special characters?");
 
   // confirms for upper, numbers, special characters
 
   // Check those answers with if statement -> can't say false to all character types
 
-  var allUserChars = [];
+  var allUserChars = ["numbers", "lowerCase", "upperCase", "specialChar"];
 
   if (yesLower) {
     // add lower case characters to allUserChars arra - method .concat
+    var allUserChars;
   }
 
   // TO do: add yesUpper...
