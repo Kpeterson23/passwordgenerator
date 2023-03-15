@@ -14,6 +14,12 @@ See the notes.js for the examples and things we discussed.
 
 # Screen Shot of Application
 
+<img src ="IMG_2627.png">
+
+# Link to Deployed Application
+
+https://kpeterson23.github.io/passwordgenerator/
+
 # License
 
 MIT
