@@ -14,7 +14,7 @@ See the notes.js for the examples and things we discussed.
 
 # Screen Shot of Application
 
-<img src=
+<img src= "users/kylerpeterson/desktop/IMG_2627.png"/>
 
 # Link to Deployed Application
 
