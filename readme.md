@@ -14,7 +14,7 @@ See the notes.js for the examples and things we discussed.
 
 # Screen Shot of Application
 
-<img src="/Users/kylerpeterson/bootcamp/passwordgenerator/Screenshot 2023-03-14 at 21.05.16.png"/>
+
 
 # Link to Deployed Application
 

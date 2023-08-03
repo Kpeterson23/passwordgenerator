@@ -1,104 +1,42 @@
-// Assignment Code
-var generateBtn = document.querySelector("#generate");
-
-// TO DO: Flesh out character arrays
-var numbers = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10"];
-var lowerCase = [
-  "a",
-  "b",
-  "c",
-  "d",
-  "e",
-  "f",
-  "g",
-  "h",
-  "i",
-  "j",
-  "k",
-  "l",
-  "m",
-  "n",
-  "o",
-  "p",
-  "q",
-  "r",
-  "s",
-  "t",
-  "u",
-  "v",
-  "w",
-  "x",
-  "y",
-  "z",
-];
-var upperCase = [
-  "A",
-  "B",
-  "C",
-  "D",
-  "E",
-  "F",
-  "G",
-  "H",
-  "I",
-  "J",
-  "K",
-  "L",
-  "M",
-  "N",
-  "O",
-  "P",
-  "Q",
-  "R",
-  "S",
-  "T",
-  "U",
-  "V",
-  "W",
-  "X",
-  "Y",
-  "Z",
-];
-
-var specialChar = ["!", "#", "$", "%", "?", "&"];
+var numbers = "0123456789";
+var lowerCase = "abcdefghijklmnopqrstuvwxyz";
+var upperCase = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+var specialChar = "!#$%?&";
 
 function generatePassword() {
-  // TO DO: ask user how many characters do they want in their password
-
-  // var inputAnswer = prompt('This is my input question');
-  var passwordlength = prompt(
+  var passwordLength = prompt(
     "How long would you like your password to be, keeping it between 8-128 characters"
   );
 
-  console.log("PW Length: ", passwordlength);
-
-  // To do: Check charachter length answer to make sure user gave proper answer
-  if (isNaN(passwordlength)) {
-    alert("password length must be a number");
+  if (isNaN(passwordLength) || passwordLength < 8 || passwordLength > 128) {
+    alert("Password length must be a number between 8 and 128");
     return;
   }
 
-  // To do: If statement to check if passwordLength is between 8 and 128
+  var useLower = confirm("Do you want to use lowercase characters?");
+  var useUpper = confirm("Do you want to use uppercase characters?");
+  var useNumbers = confirm("Do you want to use numbers?");
+  var useSpecial = confirm("Do you want to use special characters?");
 
-  // To do: Ask user 1> Do you want to use lower case? 2. Do you want to use upper case?...
-  var yesLower = confirm("Do you want to use lower case characters?");
-  var yesUpper = confirm("Do you want to use upper case characters?");
-  var yesSpecial = confirm("Do you want to use special characters?");
-
-  // confirms for upper, numbers, special characters
-
-  // Check those answers with if statement -> can't say false to all character types
-
-  var allUserChars = ["numbers", "lowerCase", "upperCase", "specialChar"];
-
-  if (yesLower) {
-    // add lower case characters to allUserChars arra - method .concat
-    var allUserChars;
+  // Check if at least one character type is selected
+  if (!useLower && !useUpper && !useNumbers && !useSpecial) {
+    alert("Please select at least one character type");
+    return;
   }
 
-  // TO do: add yesUpper...
-
-  console.log("User's Characters: ", allUserChars);
+  var allUserChars = "";
+  if (useLower) {
+    allUserChars += lowerCase;
+  }
+  if (useUpper) {
+    allUserChars += upperCase;
+  }
+  if (useNumbers) {
+    allUserChars += numbers;
+  }
+  if (useSpecial) {
+    allUserChars += specialChar;
+  }
 
   var password = "";
   for (let i = 0; i < passwordLength; i++) {
@@ -109,14 +47,11 @@ function generatePassword() {
   return password;
 }
 
-// Write password to the #password input
 function writePassword() {
   var password = generatePassword();
   var passwordText = document.querySelector("#password");
-
   passwordText.value = password;
-  // }
 }
 
-// Add event listener to generate button
+var generateBtn = document.querySelector("#generate");
 generateBtn.addEventListener("click", writePassword);
