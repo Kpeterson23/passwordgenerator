@@ -13,10 +13,7 @@ I recieved some major help from a TA regarding my prompts and all my commented d
 See the notes.js for the examples and things we discussed.
 
 # Screen Shot of Application
-
-<img width="1920" alt="Screenshot 2023-08-03 at 10 43 08 (2)" src="https://github.com/Kpeterson23/passwordgenerator/assets/124640874/e5f93845-7fed-400d-86d2-84e64be6670c">
-
-
+<img width="1920" alt="Screenshot 2023-08-03 at 10 48 12 (2)" src="https://github.com/Kpeterson23/passwordgenerator/assets/124640874/5f421206-d90d-45b3-bd08-3b20b063d9e0">
 # Link to Deployed Application
 
 https://kpeterson23.github.io/passwordgenerator/
