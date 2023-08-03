@@ -14,6 +14,7 @@ See the notes.js for the examples and things we discussed.
 
 # Screen Shot of Application
 
+<img width="1920" alt="Screenshot 2023-08-03 at 10 43 08 (2)" src="https://github.com/Kpeterson23/passwordgenerator/assets/124640874/e5f93845-7fed-400d-86d2-84e64be6670c">
 
 
 # Link to Deployed Application
